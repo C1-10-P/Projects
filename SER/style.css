@@ -51,6 +51,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-bottom: 15px;
   width: 40vw;
   height: 50px;
   border-radius: 20px;
@@ -68,6 +69,7 @@
   align-items: center;
   font-size: 15px;
   cursor: pointer;
+  padding-bottom: 15px;
 }
 
 .main .input .talk i {

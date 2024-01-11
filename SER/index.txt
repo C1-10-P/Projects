@@ -65,3 +65,34 @@
 //API connects model to recorder
 //have a textarea for action point
 //avoid medical recommendattions 
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Random String Selector</title>
+</head>
+<body>
+
+  <button onclick="getRandomString()">Get Random String</button>
+  <p id="output"></p>
+
+  <script>
+    // Function to get a random string from a predefined set
+    function getRandomString() {
+      const predefinedStrings = [
+        'Apple', 'Banana', 'Cherry', 'Date', 'Fig', 'Grape', 'Kiwi', 'Lemon'
+      ];
+
+      const randomIndex = Math.floor(Math.random() * predefinedStrings.length);
+      const randomString = predefinedStrings[randomIndex];
+
+      // Display the random string
+      document.getElementById('output').textContent = 'Random String: ' + randomString;
+    }
+  </script>
+
+</body>
+</html>

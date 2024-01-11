@@ -63,6 +63,22 @@ function speakThis(message){
         speech.text = finalText;
 
     }
+    else if(message.includes('angry')) {
+        window.open("https://google.com", "_blank");
+        const finalText = "I acknowledge you are feeling this way. Try to call someone?";
+        speech.text = finalText;
+    }
+    else if(message.includes('call') || message.includes('help')) {
+        window.open('Phone:///')
+        const finalText = "Opening Phone";
+        speech.text = finalText;
+    }
+    
+    else if(message.includes('wikipedia') || message.includes('book') ){
+        window.open(`https://en.wikipedia.org/wiki/${message.replace("wikipedia", "")}`, "_blank");
+        const finalText = "This is what i found on wikipedia regarding " + message;
+        speech.text = finalText;
+    }
     else{
         window.open(`https://www.google.com/search?q=${message.replace(" ", "+")}`, "_blank");
         const finalText = "I found some information for " + message + " on google";
@@ -76,3 +92,16 @@ function speakThis(message){
 
 }
     
+
+function getRandomString() {
+    const predefinedStrings = [
+      'Anger', 'Happy', 'Sad', 'Calm', 'Surprised', 
+    ];
+
+    const randomIndex = Math.floor(Math.random() * predefinedStrings.length);
+    const randomString = predefinedStrings[randomIndex];
+
+    // Display the random string
+    document.getElementById('output').textContent = 'Current Emotion: ' + randomString;
+}
+

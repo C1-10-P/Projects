@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Mono", monospace;
+}
+.container{
+    background: linear-gradient(45deg, blueviolet, lightgreen);
+  
+  padding:15px 10% ;
+  padding-bottom: 100px;
+  
+  }
+  .container.heading{
+    text-align: center;
+    padding-bottom: 20px;
+    color: #fff;
+    text-shadow: 0 10px 15-x rgba(0, 0, 0,2);
+    font-size: 50px;
+
+  }
+
+.container .box-container{
+    display: grid;
+    grid-template-columns: repeat(zutofit, minmax(270ox, 1fr));
+    gap: 18px;
+
+}
+.container .box-container .box{
+    box-shadow: 0 10ox 16px rgba(0, 0, 0,2);
+    border-radius: 10px;
+    background: #fff;
+    text-align: center;
+    padding: 30px 20px;
+
+}
+.container .box-container .box img{
+    height: 80px;
+
+}
+
+.container .box-container .box h3{
+    font-size: 25px;
+    color: #444;
+    padding: 12px 0;
+
+}
+.container .box-container .box p{
+    font-size: 15px;
+    color: #777;
+   line-height: 1.9;
+    
+}
+.container .box-container .box .btn{
+    margin-top: 10px;
+    display: inline-block
+    ;
+    background: #333;
+    color: #fff;
+    border-radius: 10px;
+    padding: 10px 30px;
+}
+
+.container .box-container .box .btn:hover{
+letter-spacing: 2px;
+
+}
+.container .box-container .box:hover{
+    box-shadow: 0 13px 17px rgba(0, 0, 0,3);
+    transform: scale(1.03)\;
+}
+@media (max-width:768px){
+    .container{
+        padding: 25px;
+    }
+}
